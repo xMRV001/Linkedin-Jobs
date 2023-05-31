@@ -1,13 +1,13 @@
 # linkedin jobs
 import os
 try:
+  from sty import fg, rs
   import requests
   from bs4 import BeautifulSoup
-  from sty import fg, bg, ef, rs
   import time
 except ImportError:
   print("Installing requirements to run.".capitalize)
-  lis = ('requests', 'bs4', 'sty')
+  lis = ('sty', 'requests', 'bs4')
   for i in lis:
     os.system(f'py -m pip install {i}')
 
